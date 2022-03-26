@@ -9,13 +9,12 @@ body {
 #readings {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
+  gap: 1em;
+  padding: 1em;
 }
 #readings > * {
   border: 1px black solid;
-  margin: 1em;
+  flex: 1;
   padding: 1em;
-  width: 45%;
-}
-#right {
-  left: 50%;
 }

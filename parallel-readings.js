@@ -53,25 +53,17 @@ function toggleColumns() {
   
   let columns = Array. from (document.querySelectorAll("input[name = 'display-option']")).find(r => r.checked).value;
   if (columns == 'left') {
-    // hide right column
-    right.style.display = 'none';
-    // show left column at full width
+    // show left column, hide right
     left.style.display = 'block';
-    left.style.width = '95%';
+    right.style.display = 'none';
   } else if (columns == 'right') {
-    // hide left column
+    // hide left column, show right
     left.style.display = 'none';
-    // show right column at full width
     right.style.display = 'block';
-    right.style.left = 0;
-    right.style.width = '95%';
   } else {
     // show both columns
     left.style.display = 'block';
-    left.style.width = '45%';
     right.style.display = 'block';
-    right.style.width = '45%';
-    right.style.left = '50%';
   }
 }
 window.addEventListener('DOMContentLoaded', init, false);

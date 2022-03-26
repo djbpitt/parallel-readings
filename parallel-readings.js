@@ -9,10 +9,6 @@
  *   and no XML or doctype declaration
  */
 function init() {
-  // constants for left and right columns
-  const left = document.getElementById('left');
-  const right = document.getElementById('right');
-  
   // <option> elements in columns to load content via Ajax on change
   let dropDowns = document.getElementById('readings').getElementsByTagName('select');
   for (var i = 0, len = dropDowns.length; i < len; i++) {
@@ -51,6 +47,10 @@ function chooseReading() {
 function toggleColumns() {
   // https://stackoverflow.com/questions/9618504/how-to-get-the-selected-radio-button-s-value
   // Value will be left, both, or right
+  // constants for left and right columns
+  let left = document.getElementById('left');
+  let right = document.getElementById('right');
+  
   let columns = Array. from (document.querySelectorAll("input[name = 'display-option']")).find(r => r.checked).value;
   if (columns == 'left') {
     // hide right column

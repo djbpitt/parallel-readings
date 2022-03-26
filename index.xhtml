@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Splash page</title>
+        <link rel="stylesheet" type="text/css" href="parallel-readings.css" />
+        <script type="text/javascript" src="parallel-readings.js"></script>
+    </head>
+    <body>
+        <h1>My awesome project</h1>
+        <hr />
+        <section id="display-options">
+            <label><input type="radio" name="display-option" value="left" />&#xa0;Left
+                column</label>
+            <label><input type="radio" name="display-option" value="both" checked="checked"
+                 />&#xa0;Both columns</label>
+            <label><input type="radio" name="display-option" value="right" />&#xa0;Right
+                column</label>
+        </section>
+        <hr />
+        <section id="readings">
+            <section id="left">
+                <select id="leftMenu">
+                    <option value="">Select a reading:</option>
+                    <option value="A">Hansel and Gretel</option>
+                    <option value="B">Little Red Riding Hood</option>
+                    <option value="C">Cinderella</option>
+                </select>
+                <section id="leftContent"></section>
+            </section>
+            <section id="right">
+                <select id="rightMenu">
+                    <option value="">Select a reading:</option>
+                    <option value="A">Hansel and Gretel</option>
+                    <option value="B">Little Red Riding Hood</option>
+                    <option value="C">Cinderella</option>
+                </select>
+                <section id="rightContent"></section>
+            </section>
+        </section>
+    </body>
+</html>

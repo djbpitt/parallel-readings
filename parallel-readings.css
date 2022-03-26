@@ -1,0 +1,21 @@
+body {
+  background-color: beige;
+}
+#display-options
+{
+  display: flex;
+  justify-content: flex-start;
+}
+#readings {
+  display: flex;
+  flex-direction: row;
+}
+#readings > * {
+  border: 1px black solid;
+  margin: 1em;
+  padding: 1em;
+  width: 45%;
+}
+#right {
+  left: 50%;
+}
